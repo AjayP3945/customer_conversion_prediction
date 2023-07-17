@@ -11,3 +11,23 @@ You are working for a new-age insurance company and employ mutiple outreach plan
 7. mon: last contact month of yeardur: last contact duration, in seconds (numeric)
 8. num_calls: number of contacts performed during this campaign and for this client
 9. prev_outcome: outcome of the previous marketing campaign (categorical: "unknown","other","failure","success")
+
+# Output variable (desired target):
+y - has the client subscribed to the insurance?
+
+# Minimum Requirements
+It is not sufficient to just fit a model - the model must be analysed to find the important factors that contribute towards the conversion rate. AUROC must be used as a metric to evaluate the performance of the models.
+
+# Explanation
+
+This was the problem given to me as part of my final project in the Master Data Science course by GUVI.
+
+The data was loaded and preprocessed - cleaned.
+
+* Data Visualization was done and Exploratory Data Analyis was done to take some meaningful insights.
+* It was a highly imbalanced data with less than 13% of the data in the subscribed category.
+* Data was balanced using SMOTE and Combined balancing techniques.
+* Data was fitted in Logistic regression. The AUROC score was good. But the domain side of the data needed a decent F1 score to build a 
+  reliable model.
+* Comparison and tuning of the models was done uisng Pycaret.
+* Feature importances were analysed.
